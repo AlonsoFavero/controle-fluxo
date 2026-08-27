@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Contador {
-    public static void main(String[] args){
+    public static void main(String[] args) throws ParametrosInvalidosException{
 
         Scanner scanner = new Scanner(System.in);
 
@@ -11,9 +11,8 @@ public class Contador {
         int diferenca = numeros2 - numeros1;
 
         if (numeros2 < numeros1){
-            System.out.println("Os parâmetros informados são inválidos: o segundo parâmetro deve ser maior que o primeiro.");
+            throw new ParametrosInvalidosException("Os parâmetros informados são inválidos: o segundo parâmetro deve ser maior que o primeiro.");
 
-            return;
         }
 
         for (int i = 1; i <= diferenca; i++){
