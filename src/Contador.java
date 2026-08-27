@@ -8,5 +8,13 @@ public class Contador {
         int numeros1 = scanner.nextInt();
         int numeros2 = scanner.nextInt();
 
+        int diferenca = numeros2 - numeros1;
+
+        if (numeros2 < numeros1){
+            System.out.println("Os parâmetros informados são inválidos: o segundo parâmetro deve ser maior que o primeiro.");
+
+            return;
+        }
+
     }
 }
