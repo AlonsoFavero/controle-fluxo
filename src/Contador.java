@@ -16,5 +16,9 @@ public class Contador {
             return;
         }
 
+        for (int i = 1; i <= diferenca; i++){
+            System.out.println("imprimindo o número: " + i );
+        }
+
     }
 }
